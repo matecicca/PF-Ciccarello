@@ -1,0 +1,30 @@
+.row{
+.imagenesStore {
+    display: grid;
+    height: 50vh;
+    margin-bottom: 50px;
+    width: auto;
+    grid-template-columns: 1fr 
+  }
+  
+  .full-width {
+    grid-column: 1;
+  
+    /* La primera imagen ocupa las dos columnas */
+    grid-row: 1;
+  }
+
+
+img{
+  animation-name: aparicion;
+  animation-duration: 1.5s;
+  animation-iteration-count:1;
+  width: auto;
+  object-fit: cover;
+}
+}
+    
+
+
+
+  

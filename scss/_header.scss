@@ -1,0 +1,74 @@
+.logo {
+  width: 155px;
+  height: 150px;
+}
+
+Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0px 7%;
+  border-radius: 1px;
+  position: sticky;
+  top: 0;
+  font-family: "@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Lobster&family=Open+Sans:wght@300&display=swap');";
+  
+  p {
+  color: indigo;
+  }
+  
+}
+
+.diseñoNav {
+  text-decoration: none;
+  color:$color-primario;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 200px;
+  border: $color-secundario 1px solid;
+
+  &:hover {
+    color: $color-secundario;
+    border: none;
+    
+  }
+}
+
+
+.navLink {
+  list-style-type: none;
+
+  /* Elimina los puntos de la lista */
+  padding: 0;
+
+  /* Elimina el espacio interno predeterminado de la lista */
+  display: flex;
+  flex-direction: column;
+
+  /* Muestra los elementos en una columna */
+  margin-left: 20px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.tituloHeader {
+  font-size: 55px;
+  color: $color-primario;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.sloganHeader {
+  font-size: 25px;
+}
+

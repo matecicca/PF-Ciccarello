@@ -1,0 +1,85 @@
+.contenedorX {
+    text-align: center;
+    height: 15vh;
+
+    h1{
+      color: $color-secundario;
+    }
+
+    .centradoX {
+      margin: 0;
+    
+      /* Elimina el margen predeterminado de los títulos */
+    }
+
+    h3{
+      color: $color-secundario;
+      margin: 0; 
+      
+      
+    }
+    
+   
+
+  }
+ 
+  .subtituloX {
+    margin-top: 5vh;
+    font-size: 1.4vh;
+    color: lavender;
+    
+  }
+  
+ 
+  .contenedorVideo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 50px;
+  
+  iframe {
+    width: 80%;
+  
+    /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%;
+  
+    /* Pero como máximo el 75% del ancho del contenedor */
+    aspect-ratio: 16 / 9;
+  
+    /* Define una relación de aspecto de 16:9 (rectangular) */
+  }
+}
+  
+ 
+  
+  .enlacesNoticias {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+    /* Agrega espacio horizontal entre los elementos */
+  
+    a {
+      margin-top: 20px;
+      text-decoration: none;
+      padding: 5px 10px;
+  
+      /* Ajusta el espacio dentro de los enlaces */
+      background-color: $color-background;
+  
+      /* Fondo de los enlaces */
+      color: white;
+  
+      /* Color del texto de los enlaces */
+      border: 1px solid #333;
+  
+      /* Borde de los enlaces */
+      border-radius: 5px;
+  
+      /* Borde redondeado de los enlaces */
+      &:hover {
+        background-color: $color-secundario;
+      }
+    }
+  }
+  

@@ -1,0 +1,104 @@
+#tituloR {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+
+  .contenedorResultados {
+    background-color: black;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+    gap: 1px;
+  
+  
+  .elemento {
+    color: white;
+    padding: 10px;
+    text-align:center;
+  }
+  
+  .imagenR {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  img {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: 724px) {
+    
+    img {
+      max-width: 100px;
+      height: 80px;
+    }
+    
+  }
+  
+ .textoVS {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 624px) {
+    .textoVS {
+      font-size: 15px;
+    }
+  }
+  
+  @function obtener-color($resultado) {
+    @if $resultado == "DR" {
+      @return $color-dr;
+    } @else if $resultado == "WN" {
+      @return $color-wn;
+    } @else if $resultado == "EM" {
+      @return $color-em;
+    } @else {
+      @return null; // Puedes manejar otros casos o devolver un valor predeterminado según sea necesario
+    }
+  }
+  
+  @mixin estilo-resultado($resultado) {
+    background-color: $color-fondo;
+    font-size: 40px;
+    color: obtener-color($resultado);
+
+  }
+
+
+
+  .resultado-dr {
+    @include estilo-resultado("DR");
+  }
+  
+  .resultado-wn {
+    @include estilo-resultado("WN");
+  }
+  
+  .resultado-em {
+    @include estilo-resultado("EM");
+  }
+
+  .textoNombre {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    color: white;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .textoNombre {
+
+      font-size: 40px;
+     
+    }
+  }
+}  

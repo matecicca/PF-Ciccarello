@@ -1,0 +1,55 @@
+.roster {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 100vh;
+
+  @media screen and (max-width: 1080px) {
+      grid-template-columns: 1fr; /* Cambia a una sola columna en vista celular */
+  }
+
+  .bloqueJugador {
+      text-align: center;
+      border: 2px solid $color-primario;
+      padding: 20px;
+  }
+
+  .imagenJugador {
+      width: 100%; /* Ocupa el 100% del ancho del contenedor */
+      height: 45vw; /* Altura automática para mantener la proporción */
+      object-fit: cover;
+  }
+
+  @media screen and (max-width: 1080px) {
+
+    .imagenJugador {
+      width: 100%; /* Ocupa el 100% del ancho del contenedor */
+      height:auto; /* Altura automática para mantener la proporción */
+      object-fit: cover;
+  }
+}
+  .nombreJugador {
+      color: white;
+      font-size: 30px;
+  }
+
+  .posicion {
+      color: darkorchid;
+      font-size: 24px;
+  }
+
+  .descripcionJugador {
+      font-size: 18px;
+      color: $color-secundario;
+      font-weight: 100px;
+  }
+}
+  
+   #tituloRoster {
+    font-size: 40px;
+    color: black;
+    border: 1px solid;
+    background-image: radial-gradient($color-secundario,$color-background);
+    text-align: center;
+  }

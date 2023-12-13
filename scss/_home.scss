@@ -1,0 +1,78 @@
+.primeraImagen {
+    width: 100%;
+  }
+  
+  body {
+    background-color: $color-background;
+  }
+  
+  #subTitulo {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+  }
+  
+  #primerTexto {
+    text-align: center;
+    color: lavender;
+    font-size: 25px;
+  }
+  
+  .contenedorVideo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 50px;
+  
+  iframe {
+    width: 80%;
+  
+    /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%;
+  
+    /* Pero como máximo el 75% del ancho del contenedor */
+    aspect-ratio: 16 / 9;
+  
+    /* Define una relación de aspecto de 16:9 (rectangular) */
+  }
+}
+
+
+#tituloRedes {
+  padding-top: 50px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 25px; 
+}
+
+  
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid $color-primario;
+    background-color: $color-background;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    img {
+      width: 50px;
+      height: 50px;
+    }
+}
+  
+ 
+  #tituloEscondido {
+    color: $color-background;
+    font-size: 1px;
+  }
+  

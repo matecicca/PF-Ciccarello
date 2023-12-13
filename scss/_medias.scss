@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px) {
+    .logo {
+      width: 135px;
+      height: 127px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .diseñoNav {
+      border: $color-primario 1px solid;
+      color: $color-primario;
+      font-size: 20px;
+      font-weight: 400px;
+      border-radius: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .diseñoNav {
+    border: $color-primario 1px solid;
+    color: $color-primario;
+    font-size: 30px;
+    font-weight: 400px;
+    border-radius: 2px;
+  }
+}
+  
+  @media screen and (min-width: 1024px) {
+    .diseñoNav {
+      text-decoration: none;
+      color: $color-primario;
+      border-radius: 2px;
+      font-size: 40px;
+      font-weight: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navLink {
+      list-style-type: none;
+  
+      /* Elimina los puntos de la lista */
+      padding: 0;
+  
+      /* Elimina el espacio interno predeterminado de la lista */
+      display: flex;
+      flex-direction: row;
+  
+      /* Muestra los elementos en una columna */
+      margin-left: 40px;
+      color: $color-primario;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tituloHeader {
+      font-size: 40px;
+    }
+  
+    .container-color {
+      background-color: $color-background;
+    }
+}
+
+@media screen and (max-width: 1208px) {
+    .sloganHeader {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 1208px) {
+  .sloganHeader {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtituloX {
+    text-align:center;
+    margin-top: 5vh;
+    font-size: 1.7vw;
+    color: lavender;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .subtituloX {
+    text-align:center;
+    margin-top: 5vh;
+    font-size: 2vh;
+    color: lavender;
+  }
+}
